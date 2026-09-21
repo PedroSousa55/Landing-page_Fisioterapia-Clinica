@@ -14,9 +14,7 @@ function abrirWhatsApp(mensagem) {
 }
 
 document.querySelectorAll("[data-whatsapp]").forEach((elemento) => {
-  elemento.addEventListener("click", () =>
-    abrirWhatsApp(elemento.dataset.whatsapp),
-  );
+  elemento.addEventListener("click", () => abrirWhatsApp(elemento.dataset.whatsapp));
 });
 
 botaoMenu.addEventListener("click", () => {
@@ -33,31 +31,23 @@ document.querySelectorAll(".menu a").forEach((link) => {
 
 function atualizarCabecalhoEProgresso() {
   cabecalho.classList.toggle("rolado", window.scrollY > 40);
-  const alturaRolavel =
-    document.documentElement.scrollHeight - window.innerHeight;
+  const alturaRolavel = document.documentElement.scrollHeight - window.innerHeight;
   const progresso = alturaRolavel > 0 ? window.scrollY / alturaRolavel : 0;
   barraProgresso.style.transform = `scaleX(${progresso})`;
 }
-window.addEventListener("scroll", atualizarCabecalhoEProgresso, {
-  passive: true,
-});
+window.addEventListener("scroll", atualizarCabecalhoEProgresso, { passive: true });
 atualizarCabecalhoEProgresso();
 
-const observador = new IntersectionObserver(
-  (entradas) => {
-    entradas.forEach((entrada) => {
-      if (entrada.isIntersecting) {
-        entrada.target.classList.add("visivel");
-        observador.unobserve(entrada.target);
-      }
-    });
-  },
-  { threshold: 0.14 },
-);
+const observador = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting) {
+      entrada.target.classList.add("visivel");
+      observador.unobserve(entrada.target);
+    }
+  });
+}, { threshold: 0.14 });
 
-document
-  .querySelectorAll(".animar")
-  .forEach((elemento) => observador.observe(elemento));
+document.querySelectorAll(".animar").forEach((elemento) => observador.observe(elemento));
 
 document.querySelectorAll(".faq-item").forEach((item) => {
   const pergunta = item.querySelector(".faq-pergunta");
@@ -81,20 +71,15 @@ document.querySelectorAll(".faq-item").forEach((item) => {
 const secoes = document.querySelectorAll("main section[id]");
 const linksMenu = document.querySelectorAll('.menu a[href^="#"]');
 
-const observadorMenu = new IntersectionObserver(
-  (entradas) => {
-    entradas.forEach((entrada) => {
-      if (entrada.isIntersecting) {
-        linksMenu.forEach((link) => link.classList.remove("ativo"));
-        const linkAtual = document.querySelector(
-          `.menu a[href="#${entrada.target.id}"]`,
-        );
-        if (linkAtual) linkAtual.classList.add("ativo");
-      }
-    });
-  },
-  { rootMargin: "-35% 0px -55% 0px", threshold: 0 },
-);
+const observadorMenu = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting) {
+      linksMenu.forEach((link) => link.classList.remove("ativo"));
+      const linkAtual = document.querySelector(`.menu a[href="#${entrada.target.id}"]`);
+      if (linkAtual) linkAtual.classList.add("ativo");
+    }
+  });
+}, { rootMargin: "-35% 0px -55% 0px", threshold: 0 });
 
 secoes.forEach((secao) => observadorMenu.observe(secao));
 
@@ -115,18 +100,13 @@ function animarContador(elemento) {
   requestAnimationFrame(quadro);
 }
 
-const observadorContadores = new IntersectionObserver(
-  (entradas) => {
-    entradas.forEach((entrada) => {
-      if (entrada.isIntersecting) {
-        animarContador(entrada.target);
-        observadorContadores.unobserve(entrada.target);
-      }
-    });
-  },
-  { threshold: 0.7 },
-);
+const observadorContadores = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting) {
+      animarContador(entrada.target);
+      observadorContadores.unobserve(entrada.target);
+    }
+  });
+}, { threshold: 0.7 });
 
-document
-  .querySelectorAll("[data-contador]")
-  .forEach((contador) => observadorContadores.observe(contador));
+document.querySelectorAll("[data-contador]").forEach((contador) => observadorContadores.observe(contador));

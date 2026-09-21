@@ -1,385 +1,245 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Clínica Vitta — atendimento humanizado, estrutura moderna e agendamento fácil pelo WhatsApp."
-    />
-    <title>Clínica Vitta | Saúde e Bem-estar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="barra-progresso-scroll" aria-hidden="true"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Clínica Vitta — atendimento humanizado, estrutura moderna e agendamento fácil pelo WhatsApp.">
+  <title>Clínica Vitta | Saúde e Bem-estar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="barra-progresso-scroll" aria-hidden="true"></div>
 
-    <header class="cabecalho" id="cabecalho">
-      <div class="container cabecalho-conteudo">
-        <a href="#inicio" class="logo" aria-label="Clínica Vitta">
-          Clínica <span class="logo-destaque">Vitta</span>
-        </a>
+  <header class="cabecalho" id="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#inicio" class="logo" aria-label="Clínica Vitta">
+        Clínica <span class="logo-destaque">Vitta</span>
+      </a>
 
-        <button
-          class="botao-menu"
-          id="botaoMenu"
-          aria-label="Abrir menu"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
-        </button>
+      <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-        <nav class="menu" id="menu">
-          <a href="#inicio">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#tratamentos">Tratamentos</a>
-          <a href="#profissionais">Profissionais</a>
-          <a href="#localizacao">Localização</a>
-          <a href="#faq">FAQ</a>
-          <a
-            class="botao botao-menu-agendar"
-            data-whatsapp="Olá! Gostaria de agendar uma avaliação na Clínica Vitta."
-            >Agendar avaliação</a
-          >
-        </nav>
-      </div>
-    </header>
+      <nav class="menu" id="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#tratamentos">Tratamentos</a>
+        <a href="#profissionais">Profissionais</a>
+        <a href="#localizacao">Localização</a>
+        <a href="#faq">FAQ</a>
+        <a class="botao botao-menu-agendar" data-whatsapp="Olá! Gostaria de agendar uma avaliação na Clínica Vitta.">Agendar avaliação</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero" id="inicio">
-        <div class="hero-sombra"></div>
-        <div class="container hero-conteudo animar">
-          <span class="etiqueta">CUIDADO QUE ACOLHE</span>
-          <h1>Saúde com atenção, tecnologia e humanidade.</h1>
-          <p>
-            Uma clínica pensada para cuidar de você por inteiro, com
-            profissionais especializados, ambiente moderno e atendimento
-            acolhedor.
-          </p>
-          <div class="hero-acoes">
-            <a
-              class="botao botao-principal"
-              data-whatsapp="Olá! Quero agendar uma avaliação na Clínica Vitta."
-              >Agendar pelo WhatsApp</a
-            >
-            <a class="botao botao-secundario" href="#tratamentos"
-              >Conhecer tratamentos</a
-            >
-          </div>
-          <div class="hero-beneficios">
-            <span>✓ Atendimento humanizado</span>
-            <span>✓ Profissionais especializados</span>
-            <span>✓ Fácil agendamento</span>
-          </div>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-sombra"></div>
+      <div class="container hero-conteudo animar">
+        <span class="etiqueta">CUIDADO QUE ACOLHE</span>
+        <h1>Saúde com atenção, tecnologia e humanidade.</h1>
+        <p>Uma clínica pensada para cuidar de você por inteiro, com profissionais especializados, ambiente moderno e atendimento acolhedor.</p>
+        <div class="hero-acoes">
+          <a class="botao botao-principal" data-whatsapp="Olá! Quero agendar uma avaliação na Clínica Vitta.">Agendar pelo WhatsApp</a>
+          <a class="botao botao-secundario" href="#tratamentos">Conhecer tratamentos</a>
         </div>
-      </section>
-
-      <section class="numeros">
-        <div class="container grade-numeros">
-          <div class="numero-card animar">
-            <strong data-contador="12">0</strong
-            ><span>especialidades integradas</span>
-          </div>
-          <div class="numero-card animar">
-            <strong data-contador="8">0</strong
-            ><span>profissionais especializados</span>
-          </div>
-          <div class="numero-card animar">
-            <strong data-contador="98" data-sufixo="%">0</strong
-            ><span>índice de satisfação</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="secao" id="sobre">
-        <div class="container grade-sobre">
-          <div class="sobre-imagem animar animar-esquerda">
-            <img
-              src="https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=1200&q=85"
-              alt="Ambiente moderno de clínica"
-            />
-            <span class="selo-imagem">Cuidado em cada detalhe</span>
-          </div>
-
-          <div class="sobre-texto animar animar-direita">
-            <span class="subtitulo">SOBRE A CLÍNICA</span>
-            <h2>Um espaço criado para você se sentir bem desde a chegada.</h2>
-            <p>
-              Na Clínica Vitta, cada atendimento é conduzido com atenção, escuta
-              e responsabilidade. Nossa estrutura foi pensada para oferecer
-              conforto, privacidade e praticidade.
-            </p>
-
-            <div class="lista-destaques">
-              <div class="animar">
-                <b>01.</b>
-                <p>Ambientes confortáveis e modernos.</p>
-              </div>
-              <div class="animar">
-                <b>02.</b>
-                <p>Atendimento individualizado.</p>
-              </div>
-              <div class="animar">
-                <b>03.</b>
-                <p>Equipe multidisciplinar.</p>
-              </div>
-              <div class="animar">
-                <b>04.</b>
-                <p>Agendamento rápido pelo WhatsApp.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="secao secao-suave" id="tratamentos">
-        <div class="container">
-          <div class="cabecalho-secao animar">
-            <span class="subtitulo">TRATAMENTOS</span>
-            <h2>Cuidado completo para diferentes necessidades.</h2>
-            <p>
-              Serviços fictícios para demonstração comercial. Em um projeto
-              real, esta seção é adaptada aos serviços da clínica.
-            </p>
-          </div>
-
-          <div class="grade-cards">
-            <article class="card-tratamento animar">
-              <span class="icone-card">✦</span>
-              <h3>Fisioterapia</h3>
-              <p>
-                Atendimento individual para prevenção, recuperação e melhora da
-                mobilidade.
-              </p>
-              <a data-whatsapp="Olá! Quero saber mais sobre fisioterapia."
-                >Saiba mais →</a
-              >
-            </article>
-
-            <article class="card-tratamento animar">
-              <span class="icone-card">◌</span>
-              <h3>Pilates Clínico</h3>
-              <p>
-                Exercícios orientados para mobilidade, postura, fortalecimento e
-                bem-estar.
-              </p>
-              <a data-whatsapp="Olá! Quero saber mais sobre Pilates Clínico."
-                >Saiba mais →</a
-              >
-            </article>
-
-            <article class="card-tratamento animar">
-              <span class="icone-card">+</span>
-              <h3>Ortopedia</h3>
-              <p>
-                Avaliação especializada para dores, lesões e acompanhamento
-                musculoesquelético.
-              </p>
-              <a data-whatsapp="Olá! Quero saber mais sobre ortopedia."
-                >Saiba mais →</a
-              >
-            </article>
-
-            <article class="card-tratamento animar">
-              <span class="icone-card">♡</span>
-              <h3>Nutrição</h3>
-              <p>
-                Plano de acompanhamento personalizado para saúde, rotina e
-                qualidade de vida.
-              </p>
-              <a data-whatsapp="Olá! Quero saber mais sobre nutrição."
-                >Saiba mais →</a
-              >
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="secao" id="profissionais">
-        <div class="container">
-          <div class="cabecalho-secao animar">
-            <span class="subtitulo">NOSSA EQUIPE</span>
-            <h2>Profissionais que unem conhecimento e cuidado.</h2>
-            <p>
-              Perfis fictícios para demonstração. Em um projeto real, entram as
-              fotos e especialidades da equipe da clínica.
-            </p>
-          </div>
-
-          <div class="grade-profissionais">
-            <article class="card-profissional animar">
-              <div class="foto-profissional">
-                <img
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85"
-                  alt="Profissional da clínica"
-                />
-              </div>
-              <div class="conteudo-profissional">
-                <span>Fisioterapia</span>
-                <h3>Dra. Marina Costa</h3>
-                <p>
-                  Especialista em reabilitação funcional e prevenção de lesões.
-                </p>
-              </div>
-            </article>
-
-            <article class="card-profissional animar">
-              <div class="foto-profissional">
-                <img
-                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=85"
-                  alt="Profissional da clínica"
-                />
-              </div>
-              <div class="conteudo-profissional">
-                <span>Ortopedia</span>
-                <h3>Dr. Rafael Lima</h3>
-                <p>
-                  Atendimento focado em diagnóstico e acompanhamento
-                  musculoesquelético.
-                </p>
-              </div>
-            </article>
-
-            <article class="card-profissional animar">
-              <div class="foto-profissional">
-                <img
-                  src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=85"
-                  alt="Profissional da clínica"
-                />
-              </div>
-              <div class="conteudo-profissional">
-                <span>Nutrição</span>
-                <h3>Dra. Camila Alves</h3>
-                <p>Planos personalizados com foco em saúde e rotina real.</p>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="cta">
-        <div class="container cta-conteudo animar">
-          <div>
-            <span class="subtitulo">SEU CUIDADO COMEÇA AQUI</span>
-            <h2>Quer conversar com nossa equipe?</h2>
-            <p>Fale agora pelo WhatsApp e agende sua avaliação.</p>
-          </div>
-          <a
-            class="botao botao-claro"
-            data-whatsapp="Olá! Quero falar com a equipe e agendar uma avaliação."
-            >Agendar agora</a
-          >
-        </div>
-      </section>
-
-      <section class="secao secao-escura" id="localizacao">
-        <div class="container grade-localizacao">
-          <div class="localizacao-texto animar animar-esquerda">
-            <span class="subtitulo">LOCALIZAÇÃO</span>
-            <h2>Fácil de encontrar, fácil de chegar.</h2>
-            <p><strong>Clínica Vitta</strong></p>
-            <p>Av. dos Holandeses, 1000 — Calhau, São Luís - MA</p>
-            <p>Segunda a sexta, 08h às 19h<br />Sábado, 08h às 12h</p>
-            <a
-              class="botao botao-contorno"
-              href="https://www.google.com/maps/search/?api=1&query=Av.+dos+Holandeses,+1000,+S%C3%A3o+Lu%C3%ADs,+MA"
-              target="_blank"
-              rel="noopener"
-              >Abrir no Google Maps</a
-            >
-          </div>
-
-          <div class="mapa animar animar-direita">
-            <iframe
-              title="Mapa da Clínica Vitta"
-              src="https://www.google.com/maps?q=Av.%20dos%20Holandeses%201000%20S%C3%A3o%20Lu%C3%ADs%20MA&output=embed"
-              loading="lazy"
-            >
-            </iframe>
-          </div>
-        </div>
-      </section>
-
-      <section class="secao secao-suave" id="faq">
-        <div class="container faq-container">
-          <div class="cabecalho-secao animar">
-            <span class="subtitulo">DÚVIDAS FREQUENTES</span>
-            <h2>Informações rápidas antes do seu atendimento.</h2>
-          </div>
-
-          <div class="faq-lista">
-            <div class="faq-item animar">
-              <button class="faq-pergunta">
-                Como faço para agendar?<span>+</span>
-              </button>
-              <div class="faq-resposta">
-                <p>
-                  Você pode clicar em qualquer botão de agendamento e falar
-                  diretamente com a equipe pelo WhatsApp.
-                </p>
-              </div>
-            </div>
-            <div class="faq-item animar">
-              <button class="faq-pergunta">
-                A clínica atende com hora marcada?<span>+</span>
-              </button>
-              <div class="faq-resposta">
-                <p>
-                  Sim. O atendimento é organizado por horário para oferecer mais
-                  conforto e pontualidade.
-                </p>
-              </div>
-            </div>
-            <div class="faq-item animar">
-              <button class="faq-pergunta">
-                Posso tirar dúvidas antes da avaliação?<span>+</span>
-              </button>
-              <div class="faq-resposta">
-                <p>
-                  Sim. A equipe pode orientar sobre serviços e disponibilidade
-                  pelo WhatsApp.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="rodape">
-      <div class="container rodape-conteudo">
-        <div>
-          <a href="#inicio" class="logo"
-            >Clínica <span class="logo-destaque">Vitta</span></a
-          >
-          <p>Landing page fictícia criada para demonstração comercial.</p>
-        </div>
-        <div>
-          <strong>Contato</strong>
-          <p>(98) 99999-9999<br />contato@clinicavitta.com.br</p>
-        </div>
-        <div>
-          <strong>Atendimento</strong>
-          <p>Seg a Sex: 08h–19h<br />Sáb: 08h–12h</p>
+        <div class="hero-beneficios">
+          <span>✓ Atendimento humanizado</span>
+          <span>✓ Profissionais especializados</span>
+          <span>✓ Fácil agendamento</span>
         </div>
       </div>
-      <div class="container rodape-final">
-        © 2026 Clínica Vitta — Demonstração.
+    </section>
+
+    <section class="numeros">
+      <div class="container grade-numeros">
+        <div class="numero-card animar"><strong data-contador="12">0</strong><span>especialidades integradas</span></div>
+        <div class="numero-card animar"><strong data-contador="8">0</strong><span>profissionais especializados</span></div>
+        <div class="numero-card animar"><strong data-contador="98" data-sufixo="%">0</strong><span>índice de satisfação</span></div>
       </div>
-    </footer>
+    </section>
 
-    <a
-      class="whatsapp-flutuante"
-      aria-label="Falar no WhatsApp"
-      data-whatsapp="Olá! Gostaria de mais informações sobre a Clínica Vitta."
-      >WA</a
-    >
+    <section class="secao" id="sobre">
+      <div class="container grade-sobre">
+        <div class="sobre-imagem animar animar-esquerda">
+          <img src="https://images.unsplash.com/photo-1516841273335-e39b37888115?auto=format&fit=crop&w=1200&q=85" alt="Ambiente moderno de clínica">
+          <span class="selo-imagem">Cuidado em cada detalhe</span>
+        </div>
 
-    <script src="script.js"></script>
-  </body>
+        <div class="sobre-texto animar animar-direita">
+          <span class="subtitulo">SOBRE A CLÍNICA</span>
+          <h2>Um espaço criado para você se sentir bem desde a chegada.</h2>
+          <p>Na Clínica Vitta, cada atendimento é conduzido com atenção, escuta e responsabilidade. Nossa estrutura foi pensada para oferecer conforto, privacidade e praticidade.</p>
+
+          <div class="lista-destaques">
+            <div class="animar"><b>01.</b><p>Ambientes confortáveis e modernos.</p></div>
+            <div class="animar"><b>02.</b><p>Atendimento individualizado.</p></div>
+            <div class="animar"><b>03.</b><p>Equipe multidisciplinar.</p></div>
+            <div class="animar"><b>04.</b><p>Agendamento rápido pelo WhatsApp.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-suave" id="tratamentos">
+      <div class="container">
+        <div class="cabecalho-secao animar">
+          <span class="subtitulo">TRATAMENTOS</span>
+          <h2>Cuidado completo para diferentes necessidades.</h2>
+          <p>Serviços fictícios para demonstração comercial. Em um projeto real, esta seção é adaptada aos serviços da clínica.</p>
+        </div>
+
+        <div class="grade-cards">
+          <article class="card-tratamento animar">
+            <span class="icone-card">✦</span>
+            <h3>Fisioterapia</h3>
+            <p>Atendimento individual para prevenção, recuperação e melhora da mobilidade.</p>
+            <a data-whatsapp="Olá! Quero saber mais sobre fisioterapia.">Saiba mais →</a>
+          </article>
+
+          <article class="card-tratamento animar">
+            <span class="icone-card">◌</span>
+            <h3>Pilates Clínico</h3>
+            <p>Exercícios orientados para mobilidade, postura, fortalecimento e bem-estar.</p>
+            <a data-whatsapp="Olá! Quero saber mais sobre Pilates Clínico.">Saiba mais →</a>
+          </article>
+
+          <article class="card-tratamento animar">
+            <span class="icone-card">+</span>
+            <h3>Ortopedia</h3>
+            <p>Avaliação especializada para dores, lesões e acompanhamento musculoesquelético.</p>
+            <a data-whatsapp="Olá! Quero saber mais sobre ortopedia.">Saiba mais →</a>
+          </article>
+
+          <article class="card-tratamento animar">
+            <span class="icone-card">♡</span>
+            <h3>Nutrição</h3>
+            <p>Plano de acompanhamento personalizado para saúde, rotina e qualidade de vida.</p>
+            <a data-whatsapp="Olá! Quero saber mais sobre nutrição.">Saiba mais →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="profissionais">
+      <div class="container">
+        <div class="cabecalho-secao animar">
+          <span class="subtitulo">NOSSA EQUIPE</span>
+          <h2>Profissionais que unem conhecimento e cuidado.</h2>
+          <p>Perfis fictícios para demonstração. Em um projeto real, entram as fotos e especialidades da equipe da clínica.</p>
+        </div>
+
+        <div class="grade-profissionais">
+          <article class="card-profissional animar">
+            <div class="foto-profissional">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85" alt="Profissional da clínica">
+            </div>
+            <div class="conteudo-profissional">
+              <span>Fisioterapia</span>
+              <h3>Dra. Marina Costa</h3>
+              <p>Especialista em reabilitação funcional e prevenção de lesões.</p>
+            </div>
+          </article>
+
+          <article class="card-profissional animar">
+            <div class="foto-profissional">
+              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=85" alt="Profissional da clínica">
+            </div>
+            <div class="conteudo-profissional">
+              <span>Ortopedia</span>
+              <h3>Dr. Rafael Lima</h3>
+              <p>Atendimento focado em diagnóstico e acompanhamento musculoesquelético.</p>
+            </div>
+          </article>
+
+          <article class="card-profissional animar">
+            <div class="foto-profissional">
+              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=85" alt="Profissional da clínica">
+            </div>
+            <div class="conteudo-profissional">
+              <span>Nutrição</span>
+              <h3>Dra. Camila Alves</h3>
+              <p>Planos personalizados com foco em saúde e rotina real.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-conteudo animar">
+        <div>
+          <span class="subtitulo">SEU CUIDADO COMEÇA AQUI</span>
+          <h2>Quer conversar com nossa equipe?</h2>
+          <p>Fale agora pelo WhatsApp e agende sua avaliação.</p>
+        </div>
+        <a class="botao botao-claro" data-whatsapp="Olá! Quero falar com a equipe e agendar uma avaliação.">Agendar agora</a>
+      </div>
+    </section>
+
+    <section class="secao secao-escura" id="localizacao">
+      <div class="container grade-localizacao">
+        <div class="localizacao-texto animar animar-esquerda">
+          <span class="subtitulo">LOCALIZAÇÃO</span>
+          <h2>Fácil de encontrar, fácil de chegar.</h2>
+          <p><strong>Clínica Vitta</strong></p>
+          <p>Av. dos Holandeses, 1000 — Calhau, São Luís - MA</p>
+          <p>Segunda a sexta, 08h às 19h<br>Sábado, 08h às 12h</p>
+          <a class="botao botao-contorno" href="https://www.google.com/maps/search/?api=1&query=Av.+dos+Holandeses,+1000,+S%C3%A3o+Lu%C3%ADs,+MA" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+
+        <div class="mapa animar animar-direita">
+          <iframe
+            title="Mapa da Clínica Vitta"
+            src="https://www.google.com/maps?q=Av.%20dos%20Holandeses%201000%20S%C3%A3o%20Lu%C3%ADs%20MA&output=embed"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao-suave" id="faq">
+      <div class="container faq-container">
+        <div class="cabecalho-secao animar">
+          <span class="subtitulo">DÚVIDAS FREQUENTES</span>
+          <h2>Informações rápidas antes do seu atendimento.</h2>
+        </div>
+
+        <div class="faq-lista">
+          <div class="faq-item animar">
+            <button class="faq-pergunta">Como faço para agendar?<span>+</span></button>
+            <div class="faq-resposta"><p>Você pode clicar em qualquer botão de agendamento e falar diretamente com a equipe pelo WhatsApp.</p></div>
+          </div>
+          <div class="faq-item animar">
+            <button class="faq-pergunta">A clínica atende com hora marcada?<span>+</span></button>
+            <div class="faq-resposta"><p>Sim. O atendimento é organizado por horário para oferecer mais conforto e pontualidade.</p></div>
+          </div>
+          <div class="faq-item animar">
+            <button class="faq-pergunta">Posso tirar dúvidas antes da avaliação?<span>+</span></button>
+            <div class="faq-resposta"><p>Sim. A equipe pode orientar sobre serviços e disponibilidade pelo WhatsApp.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-conteudo">
+      <div>
+        <a href="#inicio" class="logo">Clínica <span class="logo-destaque">Vitta</span></a>
+        <p>Landing page fictícia criada para demonstração comercial.</p>
+      </div>
+      <div><strong>Contato</strong><p>(98) 99999-9999<br>contato@clinicavitta.com.br</p></div>
+      <div><strong>Atendimento</strong><p>Seg a Sex: 08h–19h<br>Sáb: 08h–12h</p></div>
+    </div>
+    <div class="container rodape-final">© 2026 Clínica Vitta — Demonstração.</div>
+  </footer>
+
+  <a class="whatsapp-flutuante" aria-label="Falar no WhatsApp" data-whatsapp="Olá! Gostaria de mais informações sobre a Clínica Vitta.">WA</a>
+
+  <script src="script.js"></script>
+</body>
 </html>
